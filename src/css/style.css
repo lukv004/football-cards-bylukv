@@ -1,0 +1,255 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    max-width: 1800px; /* largura máxima*/
+    margin: 0 auto; /* centraliza o conteúdo*/
+    background-color: #292929;
+    color: #1f1f1f;
+}
+
+body.modo-claro{
+    background-color: #aaa9a9;
+    color: #333333;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding:10px;
+}
+
+header .logo{
+    width: 60px;
+    transition: 0.2s ease-in-out;
+}
+
+header .img-botao{
+    width:65px;
+    transition: 0.2s ease-in-out;
+}
+
+header #botao-alterar-tema{
+    background: none;
+    border: none;
+    cursor:pointer;
+}
+
+header .logo:hover,
+header .img-botao:hover,
+main .card-players:hover{
+    transform: scale(1.05);
+    cursor:pointer;
+}
+
+main .jogando{
+    font-size:25px;
+}
+
+main{
+    padding: 25px;
+}
+
+main .listagem-jogadores{
+    display:flex;
+    flex-wrap: wrap;
+    gap:20px;
+    justify-content: center;
+}
+
+main .png{
+    width: 365px;
+}
+
+main .card-players{
+    width: 330px;
+    height: 600px;
+    padding:15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 334px;
+    gap:10px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    background-image: linear-gradient(180deg,
+                #11374e,
+                #8260c0
+    );
+}
+
+span{
+    color:#9b8db8;
+}
+
+.modo-claro span{
+    color: #7054a5;
+
+}
+
+.modo-claro .card-players .info {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #7054a5;
+    border-radius: 10px;
+}
+
+.modo-claro .card-players .info span {
+    padding: 8px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.modo-claro .card-players{
+    background-image: linear-gradient(180deg,
+        #78a4c0,
+        #9884be);
+}
+
+main .card-players .info{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #9884be;
+    border-radius: 10px;
+}
+main .card-players .info span{
+    padding:8px;
+    text-transform: uppercase;
+    font-size:20px;
+}
+main .time,
+main .selecao{
+    padding: 10px;
+    display:flex;
+}
+
+main .card-players .jogando{
+    gap:15px;
+
+}
+
+main .descricao{
+    font-size: 20px;
+    padding-right:5px;
+    padding-top:30px;
+}
+
+main .card-players .time-al,
+main .card-players .time-rmd,
+main .card-players .time-city,
+main .card-players .time-nap,
+main .card-players .time-mil,
+main .card-players .time-psg,
+main .card-players .time-liv,
+main .card-players .time-bar,
+main .card-players .selecao-br,
+main .card-players .selecao-pt,
+main .card-players .selecao-nor,
+main .card-players .selecao-pol,
+main .card-players .selecao-fra,
+main .card-players .selecao-arg,
+main .card-players .selecao-eg,
+main .card-players .selecao-nig{
+    padding: 8px;
+}
+
+.al{
+    color: yellow;
+    background-image: linear-gradient(180deg, yellow 50%, blue 50%);
+}
+
+.pt{
+    color:green;
+    background-image: linear-gradient(180deg, green 50%, red 50%);
+}
+
+.br{
+    color: yellow;
+    background-image: linear-gradient(180deg, yellow 50%, green 50%);
+}
+
+.nor{
+    color:rgb(212, 1, 1);
+    background-image: linear-gradient(180deg, rgb(211, 1, 1) 50%, rgb(0, 0, 156) 50%);
+}
+
+.city{
+    color:rgb(51, 175, 216);
+    background-image: linear-gradient(180deg, rgb(51, 175, 216) 50%, white 50%);
+}
+
+.bar{
+    color: #9b191b;
+    background-image: linear-gradient(180deg, #9b191b 50%, #17176b 50%);
+}
+
+.pol{
+    color: red;
+    background-image: linear-gradient(180deg, red 50%, white 50%)
+}
+
+.psg{
+    color: rgb(1, 1, 80);
+    background-image: linear-gradient(180deg, rgb(1, 1, 80) 50%, red 50%)
+}
+
+.fra{
+    color:rgb(0, 0, 75);
+    background-image: linear-gradient(180deg, rgb(0,0,75) 50%, white 50%);
+}
+
+.arg{
+    color:white;
+    background-image: linear-gradient(180deg, white 50%, rgb(134, 202, 204) 50%);
+}
+
+.nap{
+    color:rgb(64, 137, 185);
+    background-image: linear-gradient(180deg, rgb(64, 137, 185) 50%, white 50%);
+}
+
+.nig{
+    color: green;
+    background-image: linear-gradient(180deg, green 50%, white 50%);
+}
+
+.mil{
+    color: red;
+    background-image: linear-gradient(180deg, red 50%, rgb(0, 0, 0) 50%);
+}
+
+.liv{
+    color:red;
+    background-color:red;
+}
+
+.eg{
+    color: red;
+    background-image: linear-gradient(180deg, red 50%, black 50%);
+}
+
+.rmd{
+    color:white;
+    background-color:white;
+}
+
+.modo-claro .card-players{
+    overflow-x:hidden;
+    overflow-y: hidden;
+}
+.modo-claro .card-players:hover {
+    background-image: linear-gradient(180deg,
+            #a1d6f7,
+            #b294ec);
+    overflow-y: scroll;
+}
+
+main .card-players {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+main .card-players:hover {
+    background-image: linear-gradient(180deg,
+            #287baf,
+            #693cbd);
+    overflow-y: scroll;
+}
